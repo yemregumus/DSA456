@@ -34,8 +34,8 @@ def factorial(n):
     if int(n) and n >= 0:
         fact = 1
         for i in range(1 , n+1):
-            fact = fact * i   
-    return fact
+            fact *= i   
+        return fact
 
 #Description: this function is passed a non-negative integer, that we will call n in this description. 
 # function returns the nth fibonacci number in the fibonacci sequence.
