@@ -9,8 +9,20 @@
 # Student Number:
 #
 
-def wins_rock_scissors_paper():
-	return 0
+def wins_rock_scissors_paper(player, opponent):
+    player = player.lower()
+    opponent = opponent.lower()
+
+    winning_rules = {
+        "rock": "scissors",
+        "paper": "rock",
+        "scissors": "paper",
+    }
+
+    if winning_rules.get(player) == opponent:
+        return True
+    else:
+        return False
 
 def factorial():
 	return 0
