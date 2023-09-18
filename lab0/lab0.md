@@ -7,8 +7,7 @@
 Put your formulas here
 
 ## Graph
-
-Put your graph here
+![image](https://github.com/seneca-dsa456-f23/labs-ygumusseneca/assets/97633311/103b8085-c99f-4bb1-a6b6-5a100acd14c8)
 
 ## Reflection here
 
