@@ -57,11 +57,29 @@ def fibonacci(n):
 # Function returns the product of the two numbers
 # (the product is the result of multiplying the two numbers together). 
 # If there are no two numbers that when summed results in the goal state, function returns 0
-def sum_to_goal():
-	return 0
+def sum_to_goal(numbers, goal):
+    
+    l = len(numbers)
+    
+    for i in range(l):
+        possibleSecond = goal - numbers[i]
+        #check if second number exists within array
+        if possibleSecond in numbers:
+           return numbers[i] * possibleSecond
+    return 0
     
 
 class UpCounter:
+    def __init__(self, stepsize=1):
+        self.countValue = 0
+        self.stepsize = stepsize
+        
+        def count(self):
+            return self.countValue
+        
+        def update(self):
+            self.countValue += self.stepsize
 
-
-class DownCounter:
+class DownCounter(UpCounter):
+    def update(self):
+        self.countValue -= self.stepsize
