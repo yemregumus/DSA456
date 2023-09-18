@@ -4,9 +4,9 @@
 
 $C = \sqrt{a^2 + b^2}$ 
 
-$\sum_{i=0}^{n} ar^i$ \n
+$\sum_{i=0}^{n} ar^i$ 
 
-$\sum_{i=1}^{n} i = 1 + 2 + 3 + 4 + \ldots + n = \frac{n(n+1)}{2}$ \n
+$\sum_{i=1}^{n} i = 1 + 2 + 3 + 4 + \ldots + n = \frac{n(n+1)}{2}$ 
 
 ## Graph
 ![image](https://github.com/seneca-dsa456-f23/labs-ygumusseneca/assets/97633311/103b8085-c99f-4bb1-a6b6-5a100acd14c8)
