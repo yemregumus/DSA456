@@ -2,12 +2,10 @@
 
 ## LaTex Formulas
 
-$C = \sqrt{a^2 + b^2}$ \n
-\\
-\\
+$C = \sqrt{a^2 + b^2}$ 
+
 $\sum_{i=0}^{n} ar^i$ \n
-\\
-\\
+
 $\sum_{i=1}^{n} i = 1 + 2 + 3 + 4 + \ldots + n = \frac{n(n+1)}{2}$ \n
 
 ## Graph
