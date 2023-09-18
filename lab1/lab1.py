@@ -23,15 +23,40 @@ def wins_rock_scissors_paper(player, opponent):
         return True
     else:
         return False
+    
+#Name: factorial
+#Parameters: a number (int)
+#Return: a number (int)
+#Description: this function is passed a non-negative integer, 
+# that we will call n in this description. function returns n! (pronounced n factorial). 
+# n! = n * (n-1) * (n-2)... * 1 Thus, 3! = 3 * 2 * 1. Note that 0! is 1 by definition.
+def factorial(n):
+    if int(n) and n >= 0:
+        fact = 1
+        for i in range(1 , n+1):
+            fact = fact * i
+        
+    return fact
 
-def factorial():
-	return 0
+#Description: this function is passed a non-negative integer, that we will call n in this description. 
+# function returns the nth fibonacci number in the fibonacci sequence.
+def fibonacci(n):
+    if n < 0:
+        print("Incorrect input")
+    elif n == 0:
+        return 0
+    elif n == 1 or n == 2:
+        return 1
+    
+    return fibonacci(n-1) + fibonacci(n-2)           
+    
 
-
-def fibonacci():
-	return 0
-
-
+#Parameters: list of numbers, and a goal (number)
+#Return: a number
+#Description: This function finds the two numbers in the list that sum up to the goal value. 
+# Function returns the product of the two numbers
+# (the product is the result of multiplying the two numbers together). 
+# If there are no two numbers that when summed results in the goal state, function returns 0
 def sum_to_goal():
 	return 0
     
@@ -40,6 +65,3 @@ class UpCounter:
 
 
 class DownCounter:
-
-
-
