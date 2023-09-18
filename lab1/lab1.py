@@ -74,10 +74,10 @@ class UpCounter:
         self.countValue = 0
         self.stepsize = stepsize
         
-        def count(self):
+    def count(self):
             return self.countValue
         
-        def update(self):
+    def update(self):
             self.countValue += self.stepsize
 
 class DownCounter(UpCounter):
