@@ -90,8 +90,7 @@ Note, if a groupmate did not complete lab1, simply put 0.0 in for the times, it 
 | Sunchit Singh        | 3.70                 | 0.23                     |
 | Lorenzo Ramos  	   | 3.06 			      | 1.18                     |
 | Revon Villava-Rayen  | 4.33                 | 0.109                    |
-|----------------------|----------------------|--------------------------|
-
+--------------------------------------------------------------------------
 
 
 ### Summary 
