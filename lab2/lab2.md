@@ -117,7 +117,7 @@ They are both almost the same but slow one is more concise on handling negative 
 
 1. Considering the solutions you saw when looking at the lab 1 code, what differences did you see between fastest and slowest versions of code?
 
-The fast version is more efficient because it keeps things simple. It follows the usual rules for the fibonacci sequence without extra complications. It doesn`t have as many special cases for different inputs or conditions to check. This simplicity makes it faster for most situations because it doesn`t get bogged down in extra steps. It`s like taking the direct route instead of going through a maze.
+The fast version is more efficient because it keeps things simple. It follows the usual rules for the fibonacci sequence without extra complications. It doesn't have as many special cases for different inputs or conditions to check. This simplicity makes it faster for most situations because it doesn't get bogged down in extra steps. It's like taking the direct route instead of going through a maze.
 
 2. Was there a difference in terms of usage of space resource?  Did one algorithm use more/less space (memory)?  
 
