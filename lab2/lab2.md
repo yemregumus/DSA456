@@ -7,14 +7,18 @@ Analyze the following function with respect to number
 
 ```python
 def function1(number):
-	total=0;
+	total=0 				  #total initialized to 0  - #+1
 
-	for i in range(0,number):
-		x = (i+1)
-		total+=(x*x)
+	for i in range(0,number): #n + 2 (initializing i and loop iteration)
+		x = (i+1)   		  #+1 (arithmetic operation)
+		total+=(x*x)		  #+2 ( multiplication and addition)
 
-	return total
+	return total			  #+1 
+#function one operations = n+2+1+2+1
+#T(n) = 4 + n
+#This functions time complexity is O(n) since as 'number' increases the number of iterations in the loops also increases linearly.
 ```
+
 
 ### function 2:
 
@@ -22,7 +26,10 @@ Analyze the following function with respect to number
 
 ```python
 def function2(number):
-	return  ((number)*(number+1)*(2*number + 1))/6
+	return  ((number)*(number+1)*(2*number + 1))/6 
+	#                1       +1 +1 +1       +1  +1 = 6 constant arithmetic operations
+	#T(n) = 1+1+1+1+1+1 = 6
+	#Since the number of operations performed does not depend on the size or value of the input, this functions time complexity is O(1) also known as constant time complexity.
 
 ```
 
@@ -32,12 +39,15 @@ Analyze the following with respect to the length of the list.  Note that the fun
 ```python
 
 def function3(list):
-	for i in range (0,len(list)-1):
-		for j in range(0,len(list)-1-i):
-			if(list[j]>list[j+1]):
-				tmp=list[j]
-				list[j]=list[j+1]
-				list[j+1]=tmp
+	for i in range (0,len(list)-1): 	 #n+2 (initializing i and loop iteration)
+		for j in range(0,len(list)-1-i): #n+2 (initializing i and loop iteration)
+			if(list[j]>list[j+1]): 		 #+1 constant operation (comparison)
+				tmp=list[j] 			 #+1 constant operation
+				list[j]=list[j+1]		 #+1 constant operation
+				list[j+1]=tmp			 #+1 constant operation
+
+#T(n) = (n * n) + (1+1+1+3) = 6n^2
+#Time complexity of fucntion3 is O(n^2) which is quadratic time complexity. 
 
 ```
 ### function 4:
@@ -46,10 +56,13 @@ Analyze the following function with respect to number
 
 ```python
 def function4(number):
-	total=1
-	for i in range(1 to number):
-		total=total*(i+1)
-	return total
+	total=1							#total initialized to 1  - #+1
+	for i in range(1 to number):	#n + 2 (initializing i and loop iteration)
+		total=total*(i+1)			#+1 constant multiplication operation
+	return total					#+1 constant operation
+
+#T(n)=((n+1)*...*(n))+(1)+1=O(n!)
+#Time complexity for this function is exponential because it has a factorial (total=total*(i+1)) term inside its equation.
 ```
 
 
@@ -59,28 +72,35 @@ def function4(number):
 ### Group members
 List the members of your group member below:
 
-	* Name 
-	* ex. Samuel Vimes
-	* ...
+	* Dev Jigishkumar Shah 
+	* Lorenzo Ramos
+	* Revon Villava-Rayen
+	* Sunchit Singh
+	* Yunus Gumus
+
 
 ### Timing Data
 Note, if a groupmate did not complete lab1, simply put 0.0 in for the times, it is ok if there is something missing.
 
-| Team member | Timing for fibonacci | Timing for sum_to_number | 
-|---|---|---|
-| Samuel Vimes |  0.123 | 0.456 |
-| group member 2 | 0.0 | 0.0 |
-| group member 3 | 0.0 | 0.0 |
-| group member 4 | 0.0 | 0.0 |
-| group member 5 | 0.0 | 0.0 |
-| group member 6 | 0.0 | 0.0 |
+--------------------------------------------------------------------------
+| Team member 		   | Timing for fibonacci | Timing for sum_to_number | 
+|----------------------|----------------------|--------------------------|
+| Dev Jigishkumar Shah | 1.58 			      | 0.67                     |
+| Yunus Gumus          | 1.99                 | 0.09                     |
+| Sunchit Singh        | 3.70                 | 0.23                     |
+| Lorenzo Ramos  	   | 3.06 			      | 1.18                     |
+| Revon Villava-Rayen  | 4.33                 | 0.109                    |
+|----------------------|----------------------|--------------------------|
+
+
 
 ### Summary 
-
-| function | fastest | slowest | difference
-|---|---|---|---|
-|sum_to_number |  |  |  |
-|fibonacci |  |  |  |
+-----------------------------------------------------
+| function          | fastest | slowest | difference|
+|-------------------|---------|---------|-----------|
+|sum_to_number      | 0.67    | 1.18    | -0.51     |
+|fibonacci          | 1.58    | 4.33    | -2.75     |
+-----------------------------------------------------
 
 
 ### Discussion:
