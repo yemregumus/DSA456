@@ -107,12 +107,29 @@ Note, if a groupmate did not complete lab1, simply put 0.0 in for the times, it 
 
 Look at the code from lab 1 and discuss the differences between fastest/slowest versions. Was it a difference in syntax? A difference in approach?  Write down your observations.
 
+#difference in syntax
+
+They are both almost the same but slow one is more concise on handling negative input but it might lead to more function calls and it makes the algorithm runs slower in my opinion. 
+
+
 
 ## Reflection
 
 1. Considering the solutions you saw when looking at the lab 1 code, what differences did you see between fastest and slowest versions of code?
+
+The fast version is more efficient because it keeps things simple. It follows the usual rules for the fibonacci sequence without extra complications. It doesn't have as many special cases for different inputs or conditions to check. This simplicity makes it faster for most situations because it doesn't get bogged down in extra steps. It's like taking the direct route instead of going through a maze.
+
 2. Was there a difference in terms of usage of space resource?  Did one algorithm use more/less space (memory)?  
+
+I used memory-profiler in python to measure how much memory both algorithms using. They both gave the result of 55MB, so there is no difference.
+
+
 3. What sort of conclusions can you draw based on your observations?
+
+I think we analyze solutions for to measure how much time they use more than how much memory. Because time is the most precious resource we have. We can get more powerfull computer if needed (not all the time of course we cant build a super computer at home), but if we need a billion years to run a algorithm thats not going to work. So if we give bigger inputs to these functions, because they have exponential time complexity O(n^2)they might take years to complete running.
+
+
+
 
 
 
